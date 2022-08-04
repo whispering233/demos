@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>2048</title>
+</head>
+<style>
+    #box{
+        width: 500px;
+        height: 500px;
+        /* border: 1px solid #000; */
+        background-color: #BBADA0;
+        display: flex;
+        justify-content: space-evenly;
+        flex-wrap: wrap;
+        border-radius: 0.5em;
+        margin: 50px auto;
+    }
+    #box div{
+        width: 100px;
+        height: 100px;
+        border: 1px solid transparent;
+        background-color: #CDC1B4;
+        font-size: 50px;
+        text-align: center;
+        line-height: 100px;
+        font-weight: bold;
+        border-radius: 10px;
+        margin-top: 10px;
+    }
+    .sum{
+        text-align: center;
+    }
+
+</style>
+
+<body>
+<h1 id="sum" class="sum">0</h1>
+<div id="box">
+    <div></div>
+    <div></div>
+    <div></div>
+    <div></div>
+    <div></div>
+    <div></div>
+    <div></div>
+    <div></div>
+    <div></div>
+    <div></div>
+    <div></div>
+    <div></div>
+    <div></div>
+    <div></div>
+    <div></div>
+    <div></div>
+</div>
+<script src="./2048.js"></script>
+</body>
+</html>

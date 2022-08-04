@@ -101,7 +101,7 @@ function change() {
         }
     }
     if (bool) {
-        alert("游戏结束！")
+        alert("游戏结束！总分为：" + sum())
         restart()
     }
 }
