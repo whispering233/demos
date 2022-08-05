@@ -46,111 +46,22 @@ body {
     text-align: center;
 }
 
+.seconds li {
+    width: 1px;
+    height: 4px;
+    background: #424242;
+    position: absolute;
+    top: -16px;
+    left: calc(50% - 1px);
+    transform-origin: center 106px;
+}
+
 .scale span {
     width: 20px;
-    /*display: block;*/
-    /*position: relative;*/
     position: absolute;
     left: calc(50% - 10px);
     top: 10px;
 }
-
-
-.scale li:nth-child(1) {
-    transform: rotate(calc(var(--time_gap) * 1deg));
-}
-
-.scale li:nth-child(2) {
-    transform: rotate(calc(var(--time_gap) * 2deg));
-}
-
-.scale li:nth-child(3) {
-    transform: rotate(calc(var(--time_gap) * 3deg));
-}
-
-.scale li:nth-child(4) {
-    transform: rotate(calc(var(--time_gap) * 4deg));
-}
-
-.scale li:nth-child(5) {
-    transform: rotate(calc(var(--time_gap) * 5deg));
-}
-
-.scale li:nth-child(6) {
-    transform: rotate(calc(var(--time_gap) * 6deg));
-}
-
-.scale li:nth-child(7) {
-    transform: rotate(calc(var(--time_gap) * 7deg));
-}
-
-.scale li:nth-child(8) {
-    transform: rotate(calc(var(--time_gap) * 8deg));
-}
-
-.scale li:nth-child(9) {
-    transform: rotate(calc(var(--time_gap) * 9deg));
-}
-
-.scale li:nth-child(10) {
-    transform: rotate(calc(var(--time_gap) * 10deg));
-}
-
-.scale li:nth-child(11) {
-    transform: rotate(calc(var(--time_gap) * 11deg));
-}
-
-.scale li:nth-child(12) {
-    transform: rotate(calc(var(--time_gap) * 12deg));
-}
-
-.scale li:nth-child(13) {
-    transform: rotate(calc(var(--time_gap) * 13deg));
-}
-
-.scale li:nth-child(14) {
-    transform: rotate(calc(var(--time_gap) * 14deg));
-}
-
-.scale li:nth-child(15) {
-    transform: rotate(calc(var(--time_gap) * 15deg));
-}
-
-.scale li:nth-child(16) {
-    transform: rotate(calc(var(--time_gap) * 16deg));
-}
-
-.scale li:nth-child(17) {
-    transform: rotate(calc(var(--time_gap) * 17deg));
-}
-
-.scale li:nth-child(18) {
-    transform: rotate(calc(var(--time_gap) * 18deg));
-}
-
-.scale li:nth-child(19) {
-    transform: rotate(calc(var(--time_gap) * 19deg));
-}
-
-.scale li:nth-child(20) {
-    transform: rotate(calc(var(--time_gap) * 20deg));
-}
-
-.scale li:nth-child(21) {
-    transform: rotate(calc(var(--time_gap) * 21deg));
-}
-
-.scale li:nth-child(22) {
-    transform: rotate(calc(var(--time_gap) * 22deg));
-}
-
-.scale li:nth-child(23) {
-    transform: rotate(calc(var(--time_gap) * 23deg));
-}
-
-/*.scale li:nth-child(24) {*/
-/*    transform: rotate(calc(var(--time_gap) * 24deg));*/
-/*}*/
 
 .clock:before {
     content: '';
@@ -204,9 +115,10 @@ body {
     background-color: #c62828;
     z-index: 12;
     border-radius: 14px 14px 0 0;
-    top: -35px;
+    top: -60px;
     left: calc(50% - 1px);
 }
+
 
 
 

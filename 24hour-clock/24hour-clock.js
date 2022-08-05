@@ -1,5 +1,19 @@
 window.onload = function () {
 
+    const seconds = document.getElementsByClassName("seconds")[0].children;
+    const scales = document.getElementsByClassName("scale")[0].children;
+
+
+    for (let i = 0; i < seconds.length; i++) {
+        let deg_ =  i * 6
+        seconds[i].style.transform = `rotate(${deg_}deg)`
+    }
+
+    for (let i = 0; i < scales.length; i++) {
+        let deg_ = (i + 1) * 15;
+        scales[i].style.transform = `rotate(${deg_}deg)`
+    }
+
 
     const hour = document.getElementsByClassName("hour")[0];
     const min = document.getElementsByClassName("min")[0];
@@ -34,5 +48,4 @@ function change(hour, min, sec, time_gap=24) {
     let s_c = sec * 6;
 
     return [h_c, m_c, s_c];
-
 }
