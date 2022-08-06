@@ -2,6 +2,7 @@ window.onload = function () {
 
     const seconds = document.getElementsByClassName("seconds")[0].children;
     const scales = document.getElementsByClassName("scale")[0].children;
+    const left = document.getElementsByClassName("left")[0]
 
 
     for (let i = 0; i < seconds.length; i++) {
@@ -30,6 +31,8 @@ window.onload = function () {
         hour.style.transform = `rotate(${time_c[0]}deg)`
         min.style.transform = `rotate(${time_c[1]}deg)`
         sec.style.transform = `rotate(${time_c[2]}deg)`
+
+        left.innerHTML = time_c[3].toString()
     });
 
 
@@ -46,6 +49,7 @@ function change(hour, min, sec, time_gap=24) {
     let h_c = (now_sec / total_sec) * 360;
     let m_c = ((now_min / min_gap) % 1) * 360;
     let s_c = sec * 6;
+    let left = total_sec - now_sec
 
-    return [h_c, m_c, s_c];
+    return [h_c, m_c, s_c, left];
 }

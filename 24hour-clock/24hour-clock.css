@@ -119,6 +119,18 @@ body {
     left: calc(50% - 1px);
 }
 
+.left {
+    z-index: 12;
+    position: absolute;
+    top: calc(30% + 6px);
+    left: calc(50% - 15px);
+    text-align: center;
+    width: 30px;
+    hight: 10px;
+    font-size: 1px;
+    color: #424242;
+}
+
 
 
 
