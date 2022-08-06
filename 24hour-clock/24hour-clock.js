@@ -1,4 +1,4 @@
-window.onload = function () {
+// window.onload = function () {
 
     const seconds = document.getElementsByClassName("seconds")[0].children;
     const scales = document.getElementsByClassName("scale")[0].children;
@@ -13,6 +13,7 @@ window.onload = function () {
     for (let i = 0; i < scales.length; i++) {
         let deg_ = (i + 1) * 15;
         scales[i].style.transform = `rotate(${deg_}deg)`
+        scales[i].firstChild.innerHTML = ((i + 1) % 24).toString();
     }
 
 
@@ -37,7 +38,7 @@ window.onload = function () {
 
 
 
-};
+// };
 
 function change(hour, min, sec, time_gap=24) {
 
