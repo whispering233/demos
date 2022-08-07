@@ -25,8 +25,8 @@ window.onload = function () {
         let time_c = change(h, m, s);
 
         hour.style.transform = `rotate(${time_c[0]}deg)`
-        sec.style.transform = `rotate(${time_c[2]}deg)`
-    }, 1000);
+        sec.style.transform = `rotate(${time_c[1]}deg)`
+    }, 960);
 
 };
 
