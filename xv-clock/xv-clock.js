@@ -28,7 +28,8 @@ window.onload = function () {
     }
 
     setInterval(function () {
-        let time_base = new Date("1997-7-29");
+        let time_start = new Date("2000-1-1")
+        let time_base = new Date("1996-7-29");
         let time = new Date();
         let h = time.getHours();
         let m = time.getMinutes();
@@ -43,11 +44,13 @@ window.onload = function () {
         let day_index = Math.floor(day_grow % 24);
 
         // 获取 当天 日期
-        time_base.setTime(Math.round(time_base.getTime() + (time_grow * (24 / time_rule))));
+        time_start.setTime(Math.round(time_start.getTime() + (time_grow * (24 / time_rule))));
 
-        let y_c = time_base.getFullYear()
-        let mn_c = time_base.getMonth()
-        let d_c = time_base.getDate()
+        let y_c = time_start.getFullYear()
+        let mn_c = time_start.getMonth()
+        let d_c = time_start.getDate()
+
+        y_c = parseInt(y_c) - 2000
 
         // 获取 当天的 时
         let h_c = h - hours_transfer_list[day_index]
